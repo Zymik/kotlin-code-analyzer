@@ -34,9 +34,6 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
-    - name: Run gradle check (test, ktlint)
-      run: ./gradlew check
-
     - name: Run verification of src
       run: ./gradlew run --args="--path=src"
       
