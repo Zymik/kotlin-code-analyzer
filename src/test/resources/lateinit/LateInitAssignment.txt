@@ -1,0 +1,7 @@
+class LateInitAssignment {
+    private lateinit var s: Test
+
+    fun assignment() {
+        s = Test()
+    }
+}

@@ -1,0 +1,6 @@
+class LateInitAssignment {
+
+    @Autowired
+    private lateinit var s: Test
+
+}

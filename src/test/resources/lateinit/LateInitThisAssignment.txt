@@ -1,0 +1,8 @@
+class LateInitAssignment {
+    private lateinit var s: Test
+
+    fun assignment() {
+        val s = 1
+        this.s = Test()
+    }
+}

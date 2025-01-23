@@ -1,0 +1,3 @@
+class LateInitAssignment {
+    private lateinit var s: Test
+}

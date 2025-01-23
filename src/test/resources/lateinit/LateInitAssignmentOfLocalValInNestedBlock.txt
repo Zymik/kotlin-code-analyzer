@@ -1,0 +1,11 @@
+class LateInitAssignment {
+    private lateinit var s: Test
+
+    fun assignment() {
+        if (1 > 2) {
+            var s = 1
+            s = 2
+        }
+        s = Test()
+    }
+}

@@ -1,0 +1,11 @@
+class LateInitAssignment {
+    private lateinit var s: Test
+
+    inner class C {
+        private val s = 1
+
+        init {
+            this@LateInitAssignment.s = Test()
+        }
+    }
+}

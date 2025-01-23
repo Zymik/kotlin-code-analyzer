@@ -1,0 +1,11 @@
+class LateInitAssignment {
+    private lateinit var s: Test
+
+    companion object {
+        var s = 1
+
+        fun s() {
+            s = 2
+        }
+    }
+}
